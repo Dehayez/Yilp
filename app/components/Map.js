@@ -13,7 +13,9 @@ const [location, setLocation] = useState({
 
   return (
     <View style={styles.container}>
-      <MapView region={location} style={styles.map} />
+      <MapView region={location} 
+      style={styles.map}
+      />
     </View>
   );
 }

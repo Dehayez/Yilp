@@ -1,36 +1,24 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { Link } from "expo-router";
+import { Map } from './components'
 
 export default function Page() {
   return (
-    <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Hello Yilp</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
-        <Link href="/dehayez">Open Profile</Link>
-      </View>
-    </View>
+      <>
+        <Map/>
+        <Link style={styles.profileButton} href="/dehayez">Open Profile</Link>
+      </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    padding: 24,
-  },
-  main: {
-    flex: 1,
-    justifyContent: "center",
-    maxWidth: 960,
-    marginHorizontal: "auto",
-  },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
-  },
+ profileButton: {
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+  margin: 8,
+  marginBottom: 40,
+  backgroundColor: "white",
+  padding: 16,
+ }
 });
