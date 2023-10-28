@@ -5,9 +5,9 @@ import { Stack, useLocalSearchParams, useGlobalSearchParams, Link, useRouter } f
 const friends = ['charlie', 'james']
 
 export default function Route() {
+  const router = useRouter();
   const glob = useGlobalSearchParams();
   const local = useLocalSearchParams();
-  const router = useRouter();
 
   return (
     <View>

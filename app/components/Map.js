@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import MapView from 'react-native-maps';
-import { Marker } from 'react-native-maps';
 import { StyleSheet, View } from 'react-native';
 
 export const Map = () => {

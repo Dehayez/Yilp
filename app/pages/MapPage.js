@@ -1,7 +1,10 @@
+import React from 'react';
 import Map from '../components'
 
-export default function MapPage() {
+export const MapPage = () => {
   return (
       <Map/>
   );
 }
+
+export default MapPage

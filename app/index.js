@@ -1,24 +1,14 @@
-import { StyleSheet } from "react-native";
-import { Link } from "expo-router";
-import { Map } from './components'
+import { useRouter } from "expo-router";
+import { Map, ProfileButton } from './components';
 
 export default function Page() {
+  const router = useRouter();
+
   return (
       <>
         <Map/>
-        <Link style={styles.profileButton} href="/dehayez">Open Profile</Link>
+        <ProfileButton onPress={()=>router.push('/dehayez')}/>
       </>
   );
 }
 
-const styles = StyleSheet.create({
- profileButton: {
-  position: "absolute",
-  bottom: 0,
-  left: 0,
-  margin: 8,
-  marginBottom: 40,
-  backgroundColor: "white",
-  padding: 16,
- }
-});

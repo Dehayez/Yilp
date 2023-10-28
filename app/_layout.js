@@ -13,7 +13,7 @@ export default () => {
                 },
             }}
         >
-            <Stack.Screen name="index" options={{ title: 'Home'}}/>
+            <Stack.Screen name="index" options={{ title: 'Map'}}/>
         </Stack>
     );
 };
